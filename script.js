@@ -1,3 +1,11 @@
+//This statement makes possible for z to take values from the Controls slider
+
+z = thisComp.layer("Controls").effect("Z-dist")("Slider");
+
+//Since there are 3 dimensions, an array is needed to manipulate all 3 dimensions
+
+[position[0], position[1], z * (index - 3)];
+
 /*These variables are the slider functions that are added on the Null layer
 connected to the source image/ video on the timeline  */
 
