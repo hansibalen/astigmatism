@@ -1,0 +1,22 @@
+/*These variables are the slider functions that are added on the Null layer
+connected to the source image/ video on the timeline  */
+
+zRot = thisComp.layer("Controls").effect("Z-Rot")("Slider");
+zRotStart = thisComp.layer("Controls").effect("Z-Rot Start")("Slider");
+zRotEnd = thisComp.layer("Controls").effect("Z-Rot End")("Slider");
+laynum = index - 2;
+
+/* This part of the code detects where the layers are at the timeline and
+manipulates the rotation of each layer gradually, either increasing or
+decreasing the speed of the rotation, making the animation much smoother */
+
+if (laynum <= zRotStart) 0;
+else if (laynum >= zRotStart && laynum <= zRotStart + zRot)
+  (Math.pow(laynum - zRotStart, 2) + (laynum - zRotStart)) / 2;
+else if (laynum >= zRotStart + zRot && laynum <= zRotEnd)
+  zRot * (laynum - zRotStart - zRot) + (Math.pow(zRot, 2) + zRot) / 2;
+else if (laynum >= zRotEnd && laynum <= zRotEnd + zRot)
+  zRot * (laynum - zRotStart - zRot) +
+    (Math.pow(zRot, 2) + zRot) / 2 -
+    (Math.pow(laynum - zRotEnd, 2) + (laynum - zRotEnd)) / 2;
+else if (laynum >= zRotEnd + zRot) zRot * (zRotEnd - zRotStart);
