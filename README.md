@@ -1,7 +1,7 @@
 # Astigmatism
 
 A script I wrote to emulate a light trails effect in Adobe After Effects.\
-[Video that I did applying the script](https://www.youtube.com/watch?v=mX5hkP6o_e4)
+Here's a demo [video](https://youtu.be/mX5hkP6o_e4) that I did, which utilizes the script.
 
 ## Description
 
@@ -31,7 +31,7 @@ thisComp.layer("Controls").effect("Z-dist")("Slider");
 [position[0],position[1],z*(index-3)]
 ```
 
-This statement makes possible for the frames to take values from the Z-dist slider on the Controls layer.\
+This expression makes possible for the frames to take values from the Z-dist slider on the Controls layer.\
 The array below manipulates 3 dimensions [x, y and z].
 
 Now your composition should look like this:
@@ -62,8 +62,8 @@ if (laynum <= zRotStart)
     	zRot*(zRotEnd-zRotStart)
 ```
 
-On the first section of the code, each statement makes possible for the layers to get the values from the sliders with the same names on the Controls layer. The last one tells us the exact position of each layer in the sequence.\
-On the second section, I based the expression off of this equation:
+On the first section of the code, each expression makes possible for the layers to get the values from the sliders with the same names on the Controls layer. The last one tells us the exact position of each layer in the sequence.\
+On the second section, I based the statement off of this equation:
 
 ![Triangular Number Equation](https://i.imgur.com/Powv4Im.png)
 
