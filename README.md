@@ -7,11 +7,11 @@ Here's a demo [video](https://youtu.be/mX5hkP6o_e4) that I did, which utilizes t
 
 - [Description](#description)
 - [Installation](#installation)
+- [Notes](#notes)
 
 ## Description
 
 Inspired by Max Cooper's Resynthesis [video](https://www.youtube.com/watch?v=Kpm1l0HfkV0), I wanted to emulate the light trails effect which is featured throughout the video. I noticed the effect was pretty similar to what people with [astigmatism](https://en.wikipedia.org/wiki/Astigmatism) see, thus I decided to name the project "Astigmatism". Although I've written the script that is needed to emulate the effect, you will need a solid understanding of Adobe After Effects in order to follow up, since a good part of achieving the effect is to experiment with the layers.\
-Also, you will need images / videos that were taken at night with low lighting, since the multiple layers being rendered with the script won't translate well with footage that has too much light.
 
 ## Installation
 
@@ -91,4 +91,10 @@ Now, the composition should look something like this:
 
 - Keyframe Lumetri color Tone properties with the sliders (Contrast, Highlights and Whites with Highlights slider, Shadows with Shadows slider).
 
-This pretty much sums up how to set up the code for the light trails effect. Now, all that remains is to duplicate the Copy layer as much as you want and experiment with the sliders, blending modes and opacity of the copied layers.
+This pretty much sums up how to set up the code for the light trails effect.
+
+## Notes
+
+- Duplicate the Copy layer as much as you want and experiment with the sliders, blending modes and opacity of the copied layers.
+- The rendering time will vary regarding the number of duplicated Copy layers you're gonna add to the composition.
+- You will need images / videos that were taken at night with low lighting, since the multiple layers being rendered with the script won't translate well with footage that has too much light.
