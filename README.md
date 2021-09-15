@@ -91,7 +91,7 @@ Now, the composition should look something like this:
 
 - Keyframe Lumetri color Tone properties with the sliders (Contrast, Highlights and Whites with Highlights slider, Shadows with Shadows slider).
 
-This pretty much sums up how to set up the code for the light trails effect.
+This pretty much sums up how to set up the code for the light trails effect. Below I've written some notes regarding to further customizing the effect by playing around with the values.
 
 ## Notes
 
