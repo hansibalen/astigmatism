@@ -98,3 +98,4 @@ This pretty much sums up how to set up the code for the light trails effect.
 - Duplicate the Copy layer as much as you want and experiment with the sliders, blending modes and opacity of the copied layers.
 - The rendering time will vary regarding the number of duplicated Copy layers you're gonna add to the composition.
 - You will need images / videos that were taken at night with low lighting, since the multiple layers being rendered with the script won't translate well with footage that has too much light.
+- Play around with the Camera properties to add further motion and a sense of flow to the composition.
