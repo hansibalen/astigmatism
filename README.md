@@ -91,11 +91,12 @@ Now, the composition should look something like this:
 
 - Keyframe Lumetri color Tone properties with the sliders (Contrast, Highlights and Whites with Highlights slider, Shadows with Shadows slider).
 
-This pretty much sums up how to set up the code for the light trails effect. Below I've written some notes regarding further customization the light trails effect by playing around with the values.
+This pretty much sums up how to set up the code for the light trails effect.\
+Below I've written some notes regarding the customization of the light trails effect by playing around with the values and the layers.
 
 ## Notes
 
-- Duplicate the Copy layer as much as you want and experiment with the sliders, blending modes and opacity of the copied layers.
-- The rendering time will vary regarding the number of duplicated Copy layers you're gonna add to the composition.
 - You will need images / videos that were taken at night with low lighting, since the multiple layers being rendered with the script won't translate well with footage that has too much light.
+- The rendering time will vary regarding the number of duplicated Copy layers you're gonna add to the composition.
+- Duplicate the Copy layer as much as you want and experiment with the sliders, blending modes and opacity of the copied layers.
 - Play around with the Camera properties to add further motion and a sense of flow to the composition.
